@@ -11,8 +11,6 @@ import java.util.*;
     Input: 1,2,3,4,5,6,6
     Output: 1,2,3,4,5,6,6 non consecutive numbers
  */
-
-
 public class ConsecutiveNumbers {
 
     public String consecutiveNumbers (String series) {
@@ -21,11 +19,15 @@ public class ConsecutiveNumbers {
         for (int i=0; i<numberSeries.length; i++) {
             numberInt[i] = Integer.parseInt(numberSeries[i].trim());
         }
+        //return "Consecutive series";
+
         for (int i=0; i<numberSeries.length-2; i++) {
-            if (!((numberInt[i]-numberInt[i+1]==-1)||(numberInt[i]-numberInt[i+1]==1)))
-                return "Not a consecutive series";
+            if ((numberInt[i]-numberInt[i+1]==-1)||(numberInt[i]-numberInt[i+1]==1))
+                return "Consecutive series";
+
         }
-        return "Consecutive series";
+
+        return "not a consecutive series";
     }
     public static void main (String args[]) {
         Scanner scanner = new Scanner(System.in);
