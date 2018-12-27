@@ -27,11 +27,13 @@ public class ConsecutiveNumbers {
 
         }
 
-        return "not a consecutive series";
+        return "Not a consecutive series";
     }
     public static void main (String args[]) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the series");
+
+        //to take the seris of numbers in consecutive fashion
         String series = scanner.next();
         ConsecutiveNumbers consecNumbers = new ConsecutiveNumbers();
         String res = consecNumbers.consecutiveNumbers(series);

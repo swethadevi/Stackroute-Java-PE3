@@ -45,20 +45,18 @@ public class StudentMarks {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter num of Students : ");
         int numOfStudents = scanner.nextInt();
-        int[] stuGrades = new int[numOfStudents];
+        int[] stuGrades = new int[numOfStudents]; //Array of students grades
 
-        for (int i = 0; i < stuGrades.length; i++) {
+        for (int i = 0; i < stuGrades.length; i++) { //to loop through the students grades array
             System.out.println("Enter grade of Student " + (i + 1));
             stuGrades[i] = scanner.nextInt();
-            if (!(stuGrades[i] >= 0 && stuGrades[i] <= 100)) {
+            if (!(stuGrades[i] >= 0 && stuGrades[i] <= 100)) { //to check the condition if it is greater than 0 and less than  100
                 System.out.println("Grades should be between 0 and 100");
                 stuGrades[i] = scanner.nextInt();
             }
         }
     }
     public String validInput(int numOfStudents) {
-
-
         if (numOfStudents<0)
             return "error";
         else

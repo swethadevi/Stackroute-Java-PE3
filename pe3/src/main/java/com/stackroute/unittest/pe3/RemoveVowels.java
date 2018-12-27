@@ -13,9 +13,9 @@ class RemoveVowels
 {
     static String remVowel(String str)
     {
-        Character vowels[] = {'a', 'e', 'i', 'o' ,'u'};
+        Character vowels[] = {'a', 'e', 'i', 'o' ,'u'}; // character array of vowels
 
-        List<Character> al = Arrays.asList(vowels);
+        List<Character> al = Arrays.asList(vowels); // to create a new array list of vowels
 
         StringBuffer sb = new StringBuffer(str);
 
@@ -37,6 +37,6 @@ class RemoveVowels
         System.out.println(str);
         System.out.println("--------After Removing the Vowel from the String--------");
 
-        System.out.println(remVowel(str));
+        System.out.println(remVowel(str));// pass the string to the remove vowels function
     }
 }

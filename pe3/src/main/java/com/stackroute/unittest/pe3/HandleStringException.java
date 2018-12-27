@@ -13,22 +13,21 @@ import java.util.*;
 
 public class HandleStringException {
 
-    HandleStringException(){
+    HandleStringException(){ //To handle the string exception
         String str = "this is a constructor string";
         System.out.println(str);
     }
 
     public static void main(String args[]) throws Exception{
         try{
-            throw new Exception();
+            throw new Exception(); // to throw an exception
         }
         catch(Exception e){
-            e.printStackTrace();
+            e.printStackTrace(); //to print the program's actual error
         }
         finally {
-            System.out.println("This is a finally string");
+            System.out.println("This is a finally string"); // finally statement
         }
     }
 }
-
 

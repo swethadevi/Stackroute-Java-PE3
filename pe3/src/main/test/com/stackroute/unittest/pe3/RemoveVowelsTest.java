@@ -22,8 +22,15 @@ public class RemoveVowelsTest {
     public void remVowel() {
         RemoveVowels remVowels=new RemoveVowels();
         assertEquals( "nd" ,remVowels.remVowel("india"));
+        assertEquals("Grmny",remVowels.remVowel("Germany"));
     }
 
+    @Test
+    public void test1(){
+        RemoveVowels Vowels=new RemoveVowels();
+        assertEquals("mrc",Vowels.remVowel("america"));
+        assertEquals("sa",Vowels.remVowel("asia"));// comparision failure expected s actual sa
 
+    }
 
 }

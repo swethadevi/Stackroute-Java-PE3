@@ -9,6 +9,7 @@ import java.util.*;
  */
 
 public class HandleExceptionCheck {
+    //to handle the exception in using array and stack array
 
     public static void checkExceptions(){
         /*Negative Array Size Exception*/

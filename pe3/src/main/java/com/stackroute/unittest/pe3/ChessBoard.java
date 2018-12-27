@@ -9,7 +9,7 @@ import java.util.*;
  */
 
 public class ChessBoard {
-    public static void printChessPattern(String chess[][]){
+    public static void printChessPattern(String chess[][]){ //to print the array elemts in chess pattern
         int i, j;
         for (i=0; i<8; i++) {
             for (j = 0; j < 16; j++) {

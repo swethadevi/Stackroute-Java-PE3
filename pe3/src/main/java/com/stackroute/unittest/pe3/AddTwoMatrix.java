@@ -33,13 +33,13 @@ public class AddTwoMatrix {
         int sum[][] = new int[m][n];
 
         System.out.println("Enter the elements of first matrix");
-
+        //to loop through the array to enter the elements of 1st matrix
         for (c = 0; c < m; c++)
             for (d = 0; d < n; d++)
                 first[c][d] = in.nextInt();
 
         System.out.println("Enter the elements of second matrix");
-
+        //to loop through the array to enter the elements of 2nd matrix
         for (c = 0 ; c < m ; c++)
             for (d = 0 ; d < n ; d++)
                 second[c][d] = in.nextInt();
@@ -49,7 +49,7 @@ public class AddTwoMatrix {
                 sum[c][d] = first[c][d] + second[c][d];  //replace '+' with '-' to subtract matrices
 
         System.out.println("Sum of the matrices:");
-
+        //to sum up the elements of the two matrices
         for (c = 0; c < m; c++)
         {
             for (d = 0; d < n; d++)

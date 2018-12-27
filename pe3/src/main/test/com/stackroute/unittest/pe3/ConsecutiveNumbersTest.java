@@ -15,5 +15,12 @@ public class ConsecutiveNumbersTest {
     public void checkSeriesConsecutive () {
         assertNotSame("Not a consecutive series",consecutiveSeries.consecutiveNumbers("56,55,54"));
     }
-
+    @Test
+    public void checkSeriesConsecutive1 () {
+        assertNotSame("consecutive series",consecutiveSeries.consecutiveNumbers("1,2,3,4,5,6,6"));
+    }
+    @Test
+    public void checkSeriesConsecutive2 () {
+        assertSame("Not a consecutive series",consecutiveSeries.consecutiveNumbers("1,2,3,4,5,6,6"));// for the failure of testcase
+    }
 }
